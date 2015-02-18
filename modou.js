@@ -26,7 +26,7 @@ function ModouJS(demande) {
     btnWrapper.className = "wrapper";
 
     var btn = document.createElement("button");
-    var btnText = document.createTextNode("Turn the swag on");
+    var btnText = document.createTextNode("Je me sens triste");
     btn.appendChild(btnText);
     btn.className = "mainButton";
     btn.addEventListener("click", function() {
