@@ -6,7 +6,7 @@
 */
 function ModouJS(demande) {
 
-  if(!demande.contains('Bonjour') || !demande.contains('Merci')) {
+  if(demande.indexOf('Bonjour') === -1 || demande.indexOf('Merci') === -1) {
     console.log('Reste poli petit con!');
     return;
   }
@@ -19,14 +19,13 @@ function ModouJS(demande) {
     style.href = "index.css";
     document.head.appendChild(style);
 
-    var audio = document.createElement("audio");
-    audio.src = "modou.mp3";
+    var audio = new Audio("modou.mp3");
 
     var btnWrapper = document.createElement("div");
     btnWrapper.className = "wrapper";
 
     var btn = document.createElement("button");
-    var btnText = document.createTextNode("Turn the swag on");
+    var btnText = document.createTextNode("Je me sens triste");
     btn.appendChild(btnText);
     btn.className = "mainButton";
     btn.addEventListener("click", function() {
