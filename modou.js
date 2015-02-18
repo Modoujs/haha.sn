@@ -19,8 +19,7 @@ function ModouJS(demande) {
     style.href = "index.css";
     document.head.appendChild(style);
 
-    var audio = document.createElement("audio");
-    audio.src = "modou.mp3";
+    var audio = new Audio("modou.mp3");
 
     var btnWrapper = document.createElement("div");
     btnWrapper.className = "wrapper";
