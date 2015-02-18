@@ -6,7 +6,7 @@
 */
 function ModouJS(demande) {
 
-  if(!demande.contains('Bonjour') || !demande.contains('Merci')) {
+  if(demande.indexOf('Bonjour') === -1 || demande.indexOf('Merci') === -1) {
     console.log('Reste poli petit con!');
     return;
   }
